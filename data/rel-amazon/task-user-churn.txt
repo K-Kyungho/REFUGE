@@ -1,0 +1,1 @@
+For each user, predict 1 if the customer does not review any product in the next 3 months, and 0 otherwise.

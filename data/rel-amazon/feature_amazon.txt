@@ -1,0 +1,25 @@
+review:
+  NA Ratios:
+    customer_id: 0.0
+    product_id: 0.0
+    rating: 0.0
+    verified: 0.0
+  Basic Stats (mean ± std):
+    customer_id: 670525.827636 ± 512166.575258
+    product_id: 205551.141595 ± 144923.528223
+    rating: 3.968534 ± 1.071410
+    verified: NaN ± NaN
+
+product:
+  NA Ratios:
+    product_id: 0.0
+    price: 0.0
+  Basic Stats (mean ± std):
+    product_id: 253005.500000 ± 146073.226544
+    price: 16.144929 ± 43.066791
+
+customer:
+  NA Ratios:
+    customer_id: 0.0
+  Basic Stats (mean ± std):
+    customer_id: 925096.000000 ± 534104.857639

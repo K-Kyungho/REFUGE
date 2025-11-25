@@ -1,0 +1,38 @@
+Database Description: The Amazon e-commerce relational database is a product and user purchasing behavior across Amazon's e-commerce platform. Notably, it contains rich information about each product and transactions. The product table includes price and category information; the review table includes overall rating, whether the user has actually bought the product, and the text of the review itself. We use the subset of book-related products.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. review: Stores reviews written by customers for products.
+- Columns:
+  - review_text: text
+  - summary: text
+  - review_time: timestamp
+  - rating: numerical
+  - verified: categorical
+  - customer_id: numerical
+  - product_id: numerical
+- Primary Key: None (composite key implied by customer_id + product_id + review_time)
+- Foreign Keys:
+  - customer_id → customer.customer_id
+  - product_id → product.product_id
+
+2. customer: Contains customer profile information.
+- Columns:
+  - customer_id: numerical
+  - customer_name: text
+- Primary Key: customer_id
+- Foreign Keys: None
+
+3. product: Contains product details.
+- Columns:
+  - product_id: numerical
+  - brand: text
+  - title: text
+  - description: text
+  - price: numerical
+  - category: varchar
+- Primary Key: product_id
+- Foreign Keys: None
