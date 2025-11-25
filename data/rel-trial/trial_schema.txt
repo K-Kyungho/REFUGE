@@ -1,0 +1,220 @@
+Database Description: The clinical trial database is curated from AACT initiative, which consolidates all protocol and results data from studies registered on ClinicalTrials.gov. It offers extensive information about clinical trials, including study designs, participant demographics, intervention details, and outcomes. It is an important resource for health research, policy making, and therapeutic development.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. studies: Central table containing clinical trial metadata.
+- Columns:
+  - nct_id: numerical
+  - start_date: timestamp
+  - target_duration: text
+  - study_type: categorical
+  - acronym: text
+  - brief_title: text
+  - official_title: text
+  - phase: categorical
+  - enrollment: numerical
+  - enrollment_type: categorical
+  - number_of_arms: numerical
+  - number_of_groups: numerical
+  - is_fda_regulated_drug: categorical
+  - is_fda_regulated_device: categorical
+  - is_unapproved_device: categorical
+  - is_ppsd: categorical
+  - is_us_export: categorical
+  - source: text
+  - has_dmc: categorical
+  - location: text
+  - study_population: text
+  - brief_summaries: text
+- Primary Key: nct_id
+- Foreign Keys: None
+
+2. designs: Contains study design information.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - allocation: categorical
+  - intervention_model: categorical
+  - masking: categorical
+  - time_perspective: categorical
+  - subject_masked: categorical
+  - caregiver_masked: categorical
+  - investigator_masked: categorical
+  - outcomes_assessor_masked: categorical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+
+3. eligibilities: Defines the eligibility criteria for participants.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - sampling_method: categorical
+  - gender: categorical
+  - minimum_age: numerical
+  - maximum_age: numerical
+  - healthy_volunteers: categorical
+  - criteria: text
+  - population: text
+  - gender_description: text
+  - gender_based: categorical
+  - adult: categorical
+  - child: categorical
+  - older_adult: categorical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+
+4. outcomes: Contains planned outcomes of the study.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - outcome_type: categorical
+  - title: text
+  - description: text
+  - time_frame: text
+  - population: text
+  - units: text
+  - units_analyzed: text
+  - dispersion_type: categorical
+  - param_type: categorical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+
+5. outcome_analyses: Contains analysis of the outcomes.
+- Columns:
+  - id: numerical 
+  - nct_id: numerical
+  - outcome_id: numerical
+  - non_inferiority_type: categorical
+  - non_inferioirty_description: text
+  - param_type: text
+  - param_value: numerical
+  - dispersion_type: categorical
+  - dispersion_value: numerical
+  - ci_n_sides: categorical
+  - ci_percent: numerical
+  - p_value_description: text
+  - method: text
+  - method_description: text
+  - groups_description: text
+  - p_value: numerical
+  - p_value_modifier: text
+  - ci_lower_limit: numerical
+  - ci_upper_limit: numerical
+  - estimate_description: text
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+  - outcome_id → outcomes.id
+
+6. drop_withdrawals: Records dropouts or withdrawals from the study.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - period: text
+  - reason: text
+  - count: numerical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+
+7. reported_event_totals: Summarizes reported adverse events.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - event_type: categorical
+  - classification: categorical
+  - subjects_affected: numerical
+  - subjects_at_risk: numerical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+
+8. interventions: Contains intervention details.
+- Columns:
+  - intervention_id: numerical
+  - mesh_term: text
+- Primary Key: intervention_id
+- Foreign Keys: None
+
+9. interventions_studies: Maps interventions to studies.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - intervention_id: numerical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+  - intervention_id → interventions.intervention_id
+
+10. facilities: Contains information about study locations.
+- Columns:
+  - facility_id: numerical
+  - name: text
+  - city: text
+  - state: text
+  - zip: text
+  - country: text
+- Primary Key: facility_id
+- Foreign Keys: None
+
+11. facilities_studies: Links facilities to studies.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - facility_id: numerical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+  - facility_id → facilities.facility_id
+
+12. sponsors: Contains sponsor information.
+- Columns:
+  - sponsor_id: numerical
+  - name: text
+  - agency_class: categorical
+- Primary Key: sponsor_id
+- Foreign Keys: None
+
+13. sponsors_studies: Links sponsors to studies.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - sponsor_id: numerical
+  - lead_or_collaborator: categorical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+  - sponsor_id → sponsors.sponsor_id
+
+14. conditions: Stores condition names (diseases).
+- Columns:
+  - condition_id: numerical
+  - mesh_term: text
+- Primary Key: condition_id
+- Foreign Keys: None
+
+15. conditions_studies: Links conditions to studies.
+- Columns:
+  - id: numerical
+  - nct_id: numerical
+  - condition_id: numerical
+  - date: timestamp
+- Primary Key: id
+- Foreign Keys:
+  - nct_id → studies.nct_id
+  - condition_id → conditions.condition_id

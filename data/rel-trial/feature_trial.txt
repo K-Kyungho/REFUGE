@@ -1,0 +1,317 @@
+drop_withdrawals:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    period: 0.0
+    reason: 0.0
+    count: 1e-05
+  Basic Stats (mean ± std):
+    id: 190599.000000 ± 110042.816970
+    nct_id: 95615.302362 ± 58498.712490
+    period: NaN ± NaN
+    reason: NaN ± NaN
+    count: 42.114141 ± 18894.987142
+
+conditions_studies:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    condition_id: 0.0
+  Basic Stats (mean ± std):
+    id: 204210.500000 ± 117901.420159
+    nct_id: 120283.777233 ± 72560.602476
+    condition_id: 515.875861 ± 602.633646
+
+sponsors:
+  NA Ratios:
+    sponsor_id: 0.0
+    name: 0.0
+    agency_class: 0.0
+  Basic Stats (mean ± std):
+    sponsor_id: 26620.000000 ± 15369.497178
+    name: NaN ± NaN
+    agency_class: NaN ± NaN
+
+facilities_studies:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    facility_id: 0.0
+  Basic Stats (mean ± std):
+    id: 899382.000000 ± 519258.872817
+    nct_id: 107454.316215 ± 69749.268099
+    facility_id: 78467.231403 ± 118801.685271
+
+conditions:
+  NA Ratios:
+    condition_id: 0.0
+    mesh_term: 0.0
+  Basic Stats (mean ± std):
+    condition_id: 1986.000000 ± 1147.050638
+    mesh_term: NaN ± NaN
+
+eligibilities:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    sampling_method: 0.802943
+    gender: 0.001109
+    minimum_age: 0.062796
+    maximum_age: 0.469235
+    healthy_volunteers: 0.013579
+    population: 0.802927
+    criteria: 8e-05
+    gender_description: 0.987807
+    gender_based: 0.981744
+    adult: 0.0
+    child: 0.0
+    older_adult: 0.0
+  Basic Stats (mean ± std):
+    id: 124864.500000 ± 72090.985700
+    nct_id: 124864.500000 ± 72090.985700
+    sampling_method: NaN ± NaN
+    gender: NaN ± NaN
+    minimum_age: NaN ± NaN
+    maximum_age: NaN ± NaN
+    healthy_volunteers: NaN ± NaN
+    population: NaN ± NaN
+    criteria: NaN ± NaN
+    gender_description: NaN ± NaN
+    gender_based: NaN ± NaN
+    adult: NaN ± NaN
+    child: NaN ± NaN
+    older_adult: NaN ± NaN
+
+interventions_studies:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    intervention_id: 0.0
+  Basic Stats (mean ± std):
+    id: 85885.000000 ± 49586.160882
+    nct_id: 103275.517229 ± 70813.425582
+    intervention_id: 582.134499 ± 601.717906
+
+designs:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    allocation: 0.373981
+    intervention_model: 0.20502
+    observational_model: 0.809597
+    primary_purpose: 0.22005
+    time_perspective: 0.802568
+    masking: 0.203795
+    masking_description: 0.954274
+    intervention_model_description: 0.913647
+    subject_masked: 0.725139
+    caregiver_masked: 0.871413
+    investigator_masked: 0.774779
+    outcomes_assessor_masked: 0.808485
+  Basic Stats (mean ± std):
+    id: 124546.000000 ± 71907.099639
+    nct_id: 125053.656128 ± 72043.057642
+    allocation: NaN ± NaN
+    intervention_model: NaN ± NaN
+    observational_model: NaN ± NaN
+    primary_purpose: NaN ± NaN
+    time_perspective: NaN ± NaN
+    masking: NaN ± NaN
+    masking_description: NaN ± NaN
+    intervention_model_description: NaN ± NaN
+    subject_masked: NaN ± NaN
+    caregiver_masked: NaN ± NaN
+    investigator_masked: NaN ± NaN
+    outcomes_assessor_masked: NaN ± NaN
+
+facilities:
+  NA Ratios:
+    facility_id: 0.0
+    name: 2e-06
+    city: 2.6e-05
+    state: 0.501517
+    zip: 0.220681
+    country: 2.6e-05
+  Basic Stats (mean ± std):
+    facility_id: 226616.000000 ± 130837.241615
+    name: NaN ± NaN
+    city: NaN ± NaN
+    state: NaN ± NaN
+    zip: NaN ± NaN
+    country: NaN ± NaN
+
+outcome_analyses:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    outcome_id: 0.0
+    non_inferiority_type: 0.0
+    non_inferiority_description: 0.883274
+    param_type: 0.325071
+    param_value: 0.32527
+    dispersion_type: 0.811141
+    dispersion_value: 0.811141
+    p_value_modifier: 0.800997
+    p_value: 0.176523
+    ci_n_sides: 0.333178
+    ci_percent: 0.289281
+    ci_lower_limit: 0.368858
+    ci_upper_limit: 0.370212
+    ci_upper_limit_na_comment: 0.999717
+    p_value_description: 0.702908
+    method: 0.136584
+    method_description: 0.805018
+    estimate_description: 0.803539
+    groups_description: 0.40242
+    other_analysis_description: 0.992282
+    ci_upper_limit_raw: 1.0
+    ci_lower_limit_raw: 1.0
+    p_value_raw: 1.0
+  Basic Stats (mean ± std):
+    id: 112922.500000 ± 65196.268785
+    nct_id: 107531.051973 ± 61970.498917
+    outcome_id: 193543.275126 ± 120253.834196
+    non_inferiority_type: NaN ± NaN
+    non_inferiority_description: NaN ± NaN
+    param_type: NaN ± NaN
+    param_value: 4691.472472 ± 958198.999294
+    dispersion_type: NaN ± NaN
+    dispersion_value: 15.916799 ± 489.075321
+    p_value_modifier: NaN ± NaN
+    p_value: 0.405168 ± 8.954332
+    ci_n_sides: NaN ± NaN
+    ci_percent: 94.223295 ± 4.711687
+    ci_lower_limit: -43.979537 ± 5220.171234
+    ci_upper_limit: 7251.718357 ± 2651704.303361
+    ci_upper_limit_na_comment: NaN ± NaN
+    p_value_description: NaN ± NaN
+    method: NaN ± NaN
+    method_description: NaN ± NaN
+    estimate_description: NaN ± NaN
+    groups_description: NaN ± NaN
+    other_analysis_description: NaN ± NaN
+    ci_upper_limit_raw: NaN ± NaN
+    ci_lower_limit_raw: NaN ± NaN
+    p_value_raw: NaN ± NaN
+
+sponsors_studies:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    sponsor_id: 0.0
+    lead_or_collaborator: 0.0
+  Basic Stats (mean ± std):
+    id: 195730.500000 ± 113005.489876
+    nct_id: 125022.829008 ± 71950.808607
+    sponsor_id: 6456.352139 ± 11003.237339
+    lead_or_collaborator: NaN ± NaN
+
+interventions:
+  NA Ratios:
+    intervention_id: 0.0
+    mesh_term: 0.0
+  Basic Stats (mean ± std):
+    intervention_id: 1730.500000 ± 999.537643
+    mesh_term: NaN ± NaN
+
+outcomes:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    outcome_type: 0.0
+    title: 0.0
+    description: 0.087718
+    time_frame: 0.000143
+    population: 0.227175
+    units: 0.063384
+    units_analyzed: 0.980604
+    dispersion_type: 0.390799
+    param_type: 0.063304
+  Basic Stats (mean ± std):
+    id: 205966.000000 ± 118914.958557
+    nct_id: 107933.295956 ± 62032.243314
+    outcome_type: NaN ± NaN
+    title: NaN ± NaN
+    description: NaN ± NaN
+    time_frame: NaN ± NaN
+    population: NaN ± NaN
+    units: NaN ± NaN
+    units_analyzed: NaN ± NaN
+    dispersion_type: NaN ± NaN
+    param_type: NaN ± NaN
+
+studies:
+  NA Ratios:
+    nct_id: 0.0
+    target_duration: 0.985833
+    study_type: 0.0
+    acronym: 0.738726
+    baseline_population: 0.925728
+    brief_title: 0.0
+    official_title: 0.020434
+    phase: 0.200713
+    enrollment: 0.005182
+    enrollment_type: 0.014912
+    source: 0.0
+    limitations_and_caveats: 1.0
+    number_of_arms: 0.243407
+    number_of_groups: 0.864782
+    has_dmc: 0.136976
+    is_fda_regulated_drug: 0.643903
+    is_fda_regulated_device: 0.643871
+    is_unapproved_device: 0.994963
+    is_ppsd: 0.999988
+    is_us_export: 0.945966
+    biospec_retention: 0.959576
+    biospec_description: 0.9594
+    source_class: 0.0
+    baseline_type_units_analyzed: 0.998751
+    fdaaa801_violation: 0.99998
+    plan_to_share_ipd: 0.633448
+    detailed_descriptions: 0.340496
+    brief_summaries: 0.0
+  Basic Stats (mean ± std):
+    nct_id: 124864.500000 ± 72090.985700
+    target_duration: NaN ± NaN
+    study_type: NaN ± NaN
+    acronym: NaN ± NaN
+    baseline_population: NaN ± NaN
+    brief_title: NaN ± NaN
+    official_title: NaN ± NaN
+    phase: NaN ± NaN
+    enrollment: 2685.273696 ± 188426.882470
+    enrollment_type: NaN ± NaN
+    source: NaN ± NaN
+    limitations_and_caveats: NaN ± NaN
+    number_of_arms: 2.187368 ± 1.369126
+    number_of_groups: 1.784056 ± 1.136015
+    has_dmc: NaN ± NaN
+    is_fda_regulated_drug: NaN ± NaN
+    is_fda_regulated_device: NaN ± NaN
+    is_unapproved_device: NaN ± NaN
+    is_ppsd: NaN ± NaN
+    is_us_export: NaN ± NaN
+    biospec_retention: NaN ± NaN
+    biospec_description: NaN ± NaN
+    source_class: NaN ± NaN
+    baseline_type_units_analyzed: NaN ± NaN
+    fdaaa801_violation: NaN ± NaN
+    plan_to_share_ipd: NaN ± NaN
+    detailed_descriptions: NaN ± NaN
+    brief_summaries: NaN ± NaN
+
+reported_event_totals:
+  NA Ratios:
+    id: 0.0
+    nct_id: 0.0
+    event_type: 0.0
+    classification: 0.0
+    subjects_affected: 0.177422
+    subjects_at_risk: 0.181173
+  Basic Stats (mean ± std):
+    id: 191531.500000 ± 110581.196096
+    nct_id: 105606.289338 ± 61014.194896
+    event_type: NaN ± NaN
+    classification: NaN ± NaN
+    subjects_affected: 21.429829 ± 137.635591
+    subjects_at_risk: 170.153002 ± 6617.478354

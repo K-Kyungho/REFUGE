@@ -1,0 +1,1 @@
+Task Description: Predict if the trials will achieve its primary outcome (defined as p-value < 0.05).
