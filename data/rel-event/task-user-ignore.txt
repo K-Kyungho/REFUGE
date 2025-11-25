@@ -1,0 +1,1 @@
+Task Description: Predict whether a user will ignore more than 2 event invitations in the next 7 days.

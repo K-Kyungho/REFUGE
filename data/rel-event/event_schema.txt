@@ -1,0 +1,68 @@
+Database Description: The Event Recommendation database is obtained from user data on a mobile app called Hangtime. This app allows users to keep track of their friends' social plans. The database contains data on user actions, event metadata, and demographic information, as well as users' social relations, which captures how social relations can affect user behavior. Data is fully anonymized, with no personally identifiable information (such as names or aliases) available.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. users: Stores user profile information.
+- Columns:
+  - user_id: numerical
+  - locale: text
+  - birthyear: numerical
+  - gender: categorical
+  - joinedAt: timestamp
+  - location: text
+  - timezone: numerical
+- Primary Key: user_id
+- Foreign Keys: None
+
+2. events: Stores details about each event.
+- Columns:
+  - event_id: numerical
+  - user_id: numerical
+  - start_time: timestamp
+  - city: text
+  - state: text
+  - zip: text
+  - country: text
+  - lat: numerical
+  - lng: numerical
+  - c_1_to_c_100: numerical
+  - c_other: numerical
+- Primary Key: event_id
+- Foreign Keys:
+  - user_id → users.user_id
+
+3. event_attendees: Records user attendance status for events.
+- Columns:
+  - event: numerical
+  - status: categorical
+  - user_id: numerical
+  - start_time: timestamp
+- Primary Key: None
+- Foreign Keys:
+  - event → events.event_id
+  - user_id → users.user_id
+
+4. event_interest: Captures user interest and invitations related to events.
+- Columns:
+  - user: numerical
+  - event: numerical
+  - invited: categorical
+  - timestamp: timestamp
+  - interested: categorical
+  - not_interested: categorical
+- Primary Key: None
+- Foreign Keys:
+  - user → users.user_id
+  - event → events.event_id
+
+5. user_friends: Represents friendship links between users.
+- Columns:
+  - user: numerical
+  - friend: numerical
+- Primary Key: None
+- Foreign Keys:
+  - user → users.user_id
+  - friend → users.user_id

@@ -1,0 +1,1 @@
+Task Description: Predict whether a user will attend an event(by responding yes or maybe) in the next 7 days if they have already attended an event in the last 14 days.
