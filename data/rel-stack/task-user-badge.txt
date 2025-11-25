@@ -1,0 +1,1 @@
+For each user predict if a user will receive a new badge in the next 3 months.

@@ -1,0 +1,117 @@
+postLinks:
+  NA Ratios:
+    Id: 0.0
+    RelatedPostId: 0.022615
+    PostId: 0.209033
+    LinkTypeId: 0.0
+  Basic Stats (mean ± std):
+    Id: 38668.000000 ± 22325.413221
+    RelatedPostId: 92458.113126 ± 81863.705317
+    PostId: 174584.767210 ± 93846.240596
+    LinkTypeId: 1.277978 ± 0.691875
+
+users:
+  NA Ratios:
+    Id: 0.0
+    AccountId: 4.7e-05
+    DisplayName: 6.3e-05
+    Location: 0.721272
+    ProfileImageUrl: 1.0
+    WebsiteUrl: 0.889431
+    AboutMe: 0.805435
+  Basic Stats (mean ± std):
+    Id: 127679.500000 ± 73716.226708
+    AccountId: 8215157.554142 ± 5614198.871735
+    DisplayName: NaN ± NaN
+    Location: NaN ± NaN
+    ProfileImageUrl: NaN ± NaN
+    WebsiteUrl: NaN ± NaN
+    AboutMe: NaN ± NaN
+
+posts:
+  NA Ratios:
+    Id: 0.0
+    OwnerUserId: 0.015709
+    PostTypeId: 0.0
+    AcceptedAnswerId: 0.827148
+    ParentId: 0.498777
+    OwnerDisplayName: 0.974402
+    Title: 0.509579
+    Tags: 0.509579
+    ContentLicense: 0.0
+    Body: 0.001477
+  Basic Stats (mean ± std):
+    Id: 166946.000000 ± 96386.751053
+    OwnerUserId: 66832.340556 ± 68658.265147
+    PostTypeId: 1.530583 ± 0.570277
+    AcceptedAnswerId: 165115.443740 ± 97540.770608
+    ParentId: 149996.489737 ± 97870.295727
+    OwnerDisplayName: NaN ± NaN
+    Title: NaN ± NaN
+    Tags: NaN ± NaN
+    ContentLicense: NaN ± NaN
+    Body: NaN ± NaN
+
+postHistory:
+  NA Ratios:
+    Id: 0.0
+    PostId: 0.0
+    UserId: 0.064097
+    PostHistoryTypeId: 0.0
+    UserDisplayName: 0.978528
+    ContentLicense: 0.094596
+    RevisionGUID: 0.0
+    Text: 0.097789
+    Comment: 0.607732
+  Basic Stats (mean ± std):
+    Id: 587683.500000 ± 339299.659936
+    PostId: 162164.513957 ± 95025.013807
+    UserId: 60334.722139 ± 67861.777818
+    PostHistoryTypeId: 6.278606 ± 10.175365
+    UserDisplayName: NaN ± NaN
+    ContentLicense: NaN ± NaN
+    RevisionGUID: NaN ± NaN
+    Text: NaN ± NaN
+    Comment: NaN ± NaN
+
+badges:
+  NA Ratios:
+    Id: 0.0
+    UserId: 0.0
+    Class: 0.0
+    Name: 0.0
+    TagBased: 0.0
+  Basic Stats (mean ± std):
+    Id: 231731.000000 ± 133790.388242
+    UserId: 78669.633770 ± 70378.752324
+    Class: 2.842214 ± 0.403024
+    Name: NaN ± NaN
+    TagBased: NaN ± NaN
+
+comments:
+  NA Ratios:
+    Id: 0.0
+    PostId: 8e-06
+    UserId: 0.018717
+    ContentLicense: 0.0
+    UserDisplayName: 0.981271
+    Text: 0.0
+  Basic Stats (mean ± std):
+    Id: 311983.000000 ± 180123.902045
+    PostId: 161014.010792 ± 96490.360136
+    UserId: 49231.599145 ± 61844.562037
+    ContentLicense: NaN ± NaN
+    UserDisplayName: NaN ± NaN
+    Text: NaN ± NaN
+
+votes:
+  NA Ratios:
+    Id: 0.0
+    UserId: 0.996068
+    PostId: 0.089572
+    VoteTypeId: 0.0
+  Basic Stats (mean ± std):
+    Id: 658937.500000 ± 380438.176017
+    UserId: 49668.021227 ± 58534.669608
+    PostId: 121886.879423 ± 95039.770901
+    VoteTypeId: 2.807618 ± 2.905112

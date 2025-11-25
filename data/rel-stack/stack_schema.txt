@@ -1,0 +1,93 @@
+Database Description: Stack Exchange is a network of question-and-answer websites on topics in diverse fields, each site covering a specific topic, where questions, answers, and users are subject to a reputation award process. The reputation system allows the sites to be self-moderating. In our benchmark, we use the stats-exchange site. We derive from the raw data dump from 2023-09-12.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. postLinks: Stores relationships between posts (e.g., duplicates, related questions).
+- Columns:
+  - Id: numerical
+  - RelatedPostId: numerical
+  - PostId: numerical
+  - LinkTypeId: numerical
+  - CreationDate: timestamp
+- Primary Key: Id
+- Foreign Keys:
+  - PostId → posts.Id
+  - RelatedPostId → posts.Id
+
+2. posts: Main table containing questions and answers.
+- Columns:
+  - Id: numerical
+  - PostTypeId: numerical
+  - AcceptedAnswerId: numerical
+  - ParentId: numerical
+  - CreationDate: timestamp
+  - Body: text
+  - OwnerUserId: numerical
+  - Title: text
+  - Tags: text
+- Primary Key: Id
+- Foreign Keys:
+  - AcceptedAnswerId → posts.Id
+  - ParentId → posts.Id
+  - OwnerUserId → users.Id
+
+3. users: Contains user profile information.
+- Columns:
+  - Id: numerical
+  - AccountId: numerical
+  - CreationDate: timestamp
+  - AboutMe: text
+- Primary Key: Id
+- Foreign Keys: None
+
+4. comments: Stores comments made on posts.
+- Columns:
+  - Id: numerical
+  - PostId: numerical
+  - Text: text
+  - CreationDate: timestamp
+  - UserId: numerical
+- Primary Key: Id
+- Foreign Keys:
+  - PostId → posts.Id
+  - UserId → users.Id
+
+5. postHistory: Tracks edits and changes made to posts.
+- Columns:
+  - Id: numerical
+  - PostId: numerical
+  - UserId: numerical
+  - PostHistoryTypeId: numerical
+  - ContentLicense: categorical
+  - Text: text
+  - CreationDate: timestamp
+- Primary Key: Id
+- Foreign Keys:
+  - PostId → posts.Id
+  - UserId → users.Id
+
+6. votes: Stores voting actions (upvotes, downvotes, etc.) on posts.
+- Columns:
+  - Id: numerical
+  - PostId: numerical
+  - VoteTypeId: numerical
+  - UserId: numerical
+  - CreationDate: timestamp
+- Primary Key: Id
+- Foreign Keys:
+  - PostId → posts.Id
+  - UserId → users.Id
+
+7. badges: Stores badges awarded to users.
+- Columns:
+  - Id: numerical
+  - UserId: numerical
+  - Class: categorical
+  - Date: timestamp
+  - TagBased: categorical
+- Primary Key: Id
+- Foreign Keys:
+  - UserId → users.Id
