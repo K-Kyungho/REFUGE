@@ -1,0 +1,60 @@
+Database Description: The H&M relational database hosts extensive customer and product data for online shopping experiences across its extensive network of brands and stores. This database includes detailed customer purchase histories and a rich set of metadata, encompassing everything from basic demographic information to extensive details about each product available.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. article: Stores detailed information about products.
+- Columns:
+  - article_id: numerical
+  - product_code: numerical
+  - prod_name: text
+  - product_type_no: numerical
+  - product_type_name: categorical
+  - product_group_name: categorical
+  - graphical_appearance_no: categorical
+  - graphical_appearance_name: categorical
+  - colour_group_code: categorical
+  - colour_group_name: categorical
+  - perceived_colour_value_id: categorical
+  - perceived_colour_value_name: categorical
+  - perceived_colour_master_id: numerical
+  - perceived_colour_master_name: categorical
+  - department_no: numerical
+  - department_name: categorical
+  - index_code: categorical
+  - index_name: categorical
+  - index_group_no: categorical
+  - index_group_name: categorical
+  - section_no: numerical
+  - section_name: text
+  - garment_group_no: categorical
+  - garment_group_name: categorical
+  - detail_desc: text
+- Primary Key: article_id
+- Foreign Keys: None
+
+2. customer: Stores customer profile information.
+- Columns:
+  - customer_id: text
+  - FN: categorical
+  - Active: categorical
+  - club_member_status: categorical
+  - fashion_news_frequency: categorical
+  - age: numerical
+  - postal_code: categorical
+- Primary Key: customer_id
+- Foreign Keys: None
+
+3. transactions: Records purchase transactions by customers.
+- Columns:
+  - t_dat: timestamp
+  - price: numerical
+  - sales_channel_id: categorical
+  - customer_id: numerical
+  - article_id: numerical
+- Primary Key: None
+- Foreign Keys:
+  - customer_id → customer.customer_id
+  - article_id → article.article_id

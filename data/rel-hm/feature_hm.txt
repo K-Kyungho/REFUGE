@@ -1,0 +1,83 @@
+customer:
+  NA Ratios:
+    customer_id: 0.0
+    FN: 0.652378
+    Active: 0.661508
+    club_member_status: 0.004418
+    fashion_news_frequency: 0.01167
+    age: 0.011561
+    postal_code: 0.0
+  Basic Stats (mean ± std):
+    customer_id: 685989.500000 ± 396056.655499
+    FN: 1.000000 ± 0.000000
+    Active: 1.000000 ± 0.000000
+    club_member_status: NaN ± NaN
+    fashion_news_frequency: NaN ± NaN
+    age: 36.386965 ± 14.313628
+    postal_code: NaN ± NaN
+
+transactions:
+  NA Ratios:
+    customer_id: 0.0
+    article_id: 0.0
+    price: 0.0
+    sales_channel_id: 0.0
+  Basic Stats (mean ± std):
+    customer_id: 685027.211724 ± 396104.957704
+    article_id: 67719.158253 ± 27968.027887
+    price: 0.028278 ± 0.019104
+    sales_channel_id: 1.717938 ± 0.450003
+
+article:
+  NA Ratios:
+    article_id: 0.0
+    product_code: 0.0
+    prod_name: 0.0
+    product_type_no: 0.0
+    product_type_name: 0.0
+    product_group_name: 0.0
+    graphical_appearance_no: 0.0
+    graphical_appearance_name: 0.0
+    colour_group_code: 0.0
+    colour_group_name: 0.0
+    perceived_colour_value_id: 0.0
+    perceived_colour_value_name: 0.0
+    perceived_colour_master_id: 0.0
+    perceived_colour_master_name: 0.0
+    department_no: 0.0
+    department_name: 0.0
+    index_code: 0.0
+    index_name: 0.0
+    index_group_no: 0.0
+    index_group_name: 0.0
+    section_no: 0.0
+    section_name: 0.0
+    garment_group_no: 0.0
+    garment_group_name: 0.0
+    detail_desc: 0.003942
+  Basic Stats (mean ± std):
+    article_id: 52770.500000 ± 30467.495393
+    product_code: 698424.563378 ± 128462.384432
+    prod_name: NaN ± NaN
+    product_type_no: 234.861875 ± 75.049308
+    product_type_name: NaN ± NaN
+    product_group_name: NaN ± NaN
+    graphical_appearance_no: 1009515.075723 ± 22413.585778
+    graphical_appearance_name: NaN ± NaN
+    colour_group_code: 32.233822 ± 28.086154
+    colour_group_name: NaN ± NaN
+    perceived_colour_value_id: 3.206183 ± 1.563839
+    perceived_colour_value_name: NaN ± NaN
+    perceived_colour_master_id: 7.807972 ± 5.376727
+    perceived_colour_master_name: NaN ± NaN
+    department_no: 4532.777833 ± 2712.692011
+    department_name: NaN ± NaN
+    index_code: NaN ± NaN
+    index_name: NaN ± NaN
+    index_group_no: 3.171534 ± 4.353234
+    index_group_name: NaN ± NaN
+    section_no: 42.664219 ± 23.260105
+    section_name: NaN ± NaN
+    garment_group_no: 1010.438290 ± 6.731023
+    garment_group_name: NaN ± NaN
+    detail_desc: NaN ± NaN
