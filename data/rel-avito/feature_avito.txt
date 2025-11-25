@@ -1,0 +1,107 @@
+SearchInfo:
+  NA Ratios:
+    UserID: 0.012709
+    SearchID: 0.0
+    IPID: 0.0
+    IsUserLoggedOn: 0.0
+    SearchQuery: 0.846576
+    LocationID: 1e-06
+    CategoryID: 0.0
+  Basic Stats (mean ± std):
+    UserID: 48485.966987 ± 28511.730660
+    SearchID: 993577.500000 ± 573642.670098
+    IPID: 1140375.211482 ± 658524.285325
+    IsUserLoggedOn: 0.338167 ± 0.473086
+    SearchQuery: NaN ± NaN
+    LocationID: 304.776693 ± 197.290620
+    CategoryID: 29.524816 ± 17.527033
+
+VisitStream:
+  NA Ratios:
+    UserID: 0.004386
+    IPID: 0.0
+    AdID: 0.002357
+  Basic Stats (mean ± std):
+    UserID: 49155.188452 ± 28486.883298
+    IPID: 1136625.224421 ± 654465.890048
+    AdID: 2965108.149758 ± 1712583.287632
+
+Category:
+  NA Ratios:
+    CategoryID: 0.0
+    Level: 0.0
+    ParentCategoryID: 0.0
+    SubcategoryID: 0.0
+  Basic Stats (mean ± std):
+    CategoryID: 33.500000 ± 19.773720
+    Level: 2.808824 ± 0.432188
+    ParentCategoryID: 6.632353 ± 3.485169
+    SubcategoryID: 31.588235 ± 16.294157
+
+AdsInfo:
+  NA Ratios:
+    AdID: 0.0
+    LocationID: 0.004152
+    CategoryID: 5e-06
+    Price: 1.1e-05
+    Title: 0.0
+    IsContext: 0.0
+  Basic Stats (mean ± std):
+    AdID: 2980278.500000 ± 1720665.027248
+    LocationID: 346.732253 ± 276.211099
+    CategoryID: 38.373036 ± 15.160186
+    Price: 5451130.026839 ± 1433889525.381973
+    Title: NaN ± NaN
+    IsContext: 0.004151 ± 0.064294
+
+PhoneRequestsStream:
+  NA Ratios:
+    UserID: 0.004173
+    IPID: 0.0
+    AdID: 0.002451
+  Basic Stats (mean ± std):
+    UserID: 49464.126816 ± 28437.491646
+    IPID: 1129101.651678 ± 651897.819088
+    AdID: 2963778.358602 ± 1712524.392083
+
+UserInfo:
+  NA Ratios:
+    UserID: 0.0
+    UserAgentID: 1e-05
+    UserAgentOSID: 1e-05
+    UserDeviceID: 1e-05
+    UserAgentFamilyID: 1e-05
+  Basic Stats (mean ± std):
+    UserID: 49124.500000 ± 28362.476311
+    UserAgentID: 33068.510041 ± 18085.939902
+    UserAgentOSID: 22.954452 ± 10.726967
+    UserDeviceID: 2034.593706 ± 322.759091
+    UserAgentFamilyID: 42.594011 ± 24.934748
+
+Location:
+  NA Ratios:
+    LocationID: 0.0
+    Level: 0.0
+    RegionID: 0.000285
+    CityID: 0.000285
+  Basic Stats (mean ± std):
+    LocationID: 1755.500000 ± 1013.971400
+    Level: 2.976082 ± 0.154668
+    RegionID: 41.224722 ± 22.142968
+    CityID: 1856.923384 ± 1088.348180
+
+SearchStream:
+  NA Ratios:
+    SearchID: 1e-06
+    AdID: 0.0
+    Position: 0.0
+    ObjectType: 0.0
+    HistCTR: 0.516836
+    IsClick: 0.523006
+  Basic Stats (mean ± std):
+    SearchID: 996412.843960 ± 573159.970820
+    AdID: 2979450.101728 ± 1708209.731059
+    Position: 4.359515 ± 2.857822
+    ObjectType: 2.066816 ± 0.946069
+    HistCTR: 0.010117 ± 0.015298
+    IsClick: 0.005846 ± 0.076234

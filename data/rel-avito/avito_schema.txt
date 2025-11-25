@@ -1,0 +1,97 @@
+Database Description: Avito is a leading online advertisement platform, providing a marketplace for users to buy and sell a wide variety of products and services, including real estate, vehicles, jobs, and goods. The Avito Context Ad Clicks dataset on Kaggle is part of a competition aimed at predicting whether an ad will be clicked based on contextual information. This dataset includes user searches, ad attributes, and other related data to help build predictive models.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. AdsInfo: Stores information about advertisements.
+- Columns:
+  - AdID: numerical
+  - LocationID: numerical
+  - CategoryID: numerical
+  - Price: numerical
+  - Title: text
+  - IsContext: categorical
+- Primary Key: AdID
+- Foreign Keys:
+  - LocationID → Location.LocationID
+  - CategoryID → Category.CategoryID
+
+2. Category: Stores category details for advertisements.
+- Columns:
+  - CategoryID: numerical
+  - Level: categorical
+  - ParentCategoryID: numerical
+  - SubcategoryID: numerical
+  - __index_level_0__: numerical
+- Primary Key: CategoryID
+- Foreign Keys: None
+
+3. Location: Contains geographical location information.
+- Columns:
+  - LocationID: numerical
+  - Level: categorical
+  - RegionID: numerical
+  - CityID: numerical
+- Primary Key: LocationID
+- Foreign Keys: None
+
+4. PhoneRequestsStream: Logs user phone call requests for advertisements.
+- Columns:
+  - UserID: numerical
+  - IPID: numerical
+  - AdID: numerical
+  - PhoneRequestDate: timestamp
+- Foreign Keys:
+  - UserID → UserInfo.UserID
+  - AdID → AdsInfo.AdID
+
+5. SearchInfo: Records user search activities.
+- Columns:
+  - SearchID: numerical
+  - UserID: numerical
+  - SearchDate: timestamp
+  - IPID: numerical
+  - IsUserLoggedOn: categorical
+  - SearchQuery: text
+  - LocationID: numerical
+  - CategoryID: numerical
+- Primary Key: SearchID
+- Foreign Keys:
+  - UserID → UserInfo.UserID
+  - LocationID → Location.LocationID
+  - CategoryID → Category.CategoryID
+
+6. SearchStream: Logs advertisements shown or clicked in search results.
+- Columns:
+  - SearchID: numerical
+  - AdID: numerical
+  - Position: categorical
+  - ObjectType: categorical
+  - HistCTR: numerical
+  - IsClick: categorical
+  - SearchDate: timestamp
+- Foreign Keys:
+  - SearchID → SearchInfo.SearchID
+  - AdID → AdsInfo.AdID
+
+7. UserInfo: Stores user metadata and device information.
+- Columns:
+  - UserID: numerical
+  - UserAgentID: numerical
+  - UserAgentOSID: numerical
+  - UserDeviceID: numerical
+  - UserAgentFamilyID: numerical
+- Primary Key: UserID
+- Foreign Keys: None
+
+8. VisitStream: Logs advertisement view events by users.
+- Columns:
+  - UserID: numerical
+  - IPID: numerical
+  - AdID: numerical
+  - ViewDate: timestamp
+- Foreign Keys:
+  - UserID → UserInfo.UserID
+  - AdID → AdsInfo.AdID
