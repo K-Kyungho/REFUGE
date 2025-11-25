@@ -1,0 +1,130 @@
+Database Description: The F1 database tracks all-time Formula 1 racing data and statistics since 1950. It provides detailed information for various stakeholders including drivers, constructors, engine manufacturers, and tyre manufacturers. Highlights include data on all circuits (e.g. geographical details), and full historical data from every season. This includes overall standings, race results, and more specific data like practice sessions, qualifying positions, sprints, and pit stops.
+
+[Table]
+Columns: Column type
+- Pkey
+- Fkey
+
+1. races: Stores information about individual races.
+- Columns: 
+  - raceId: numerical
+  - year: numerical
+  - round: numerical
+  - circuitId: numerical
+  - name: text
+  - date: timestamp
+  - time: timestamp
+- Primary Key: raceId
+- Foreign Keys:
+  - circuitId → circuits.circuitId
+
+2. circuits: Contains information about racing circuits.
+- Columns:
+  - circuitId: numerical
+  - circuitRef: text
+  - name: text
+  - location: text
+  - country: categorical
+  - lat: numerical
+  - lng: numerical
+  - alt: numerical
+- Primary Key: circuitId
+- Foreign Keys: None
+
+3. drivers: Stores driver profile data.
+- Columns:
+  - driverId: numerical
+  - driverRef: text
+  - code: text
+  - forename: text
+  - surname: text
+  - dob: timestamp
+  - nationality: categorical
+- Primary Key: driverId
+- Foreign Keys: None
+
+4. results: Records race results for each driver.
+- Columns:
+  - resultId: numerical
+  - raceId: numerical
+  - driverId: numerical
+  - constructorId: numerical
+  - statusId: categorical
+  - number: numerical
+  - grid: numerical
+  - position: numerical
+  - positionOrder: numerical
+  - points: numerical
+  - laps: numerical
+  - milliseconds: numerical
+  - fastestLap: numerical
+  - rank: numerical
+  - date: timestamp
+- Primary Key: resultId
+- Foreign Keys:
+  - raceId → races.raceId
+  - driverId → drivers.driverId
+  - constructorId → constructors.constructorId
+
+5. standings: Contains standings of drivers per race.
+- Columns:
+  - driverStandingsId: numerical
+  - raceId: numerical
+  - driverId: numerical
+  - points: numerical
+  - position: numerical
+  - wins: numerical
+  - date: timestamp
+- Primary Key: driverStandingsId
+- Foreign Keys:
+  - raceId → races.raceId
+  - driverId → drivers.driverId
+
+6. constructors: Contains team or constructor information.
+- Columns:
+  - constructorId: numerical
+  - constructorRef: text
+  - name: text
+  - nationality: categorical
+- Primary Key: constructorId
+- Foreign Keys: None
+
+7. constructor_results: Records race results for constructors.
+- Columns:
+  - constructorResultsId: numerical
+  - raceId: numerical
+  - constructorId: numerical
+  - points: numerical
+  - date: timestamp
+- Primary Key: constructorResultsId
+- Foreign Keys:
+  - raceId → races.raceId
+  - constructorId → constructors.constructorId
+
+8. constructor_standings: Contains standings for constructors.
+- Columns:
+  - constructorStandingsId: numerical
+  - raceId: numerical
+  - constructorId: numerical
+  - points: numerical
+  - position: numerical
+  - wins: numerical
+  - date: timestamp
+- Primary Key: constructorStandingsId
+- Foreign Keys:
+  - raceId → races.raceId
+  - constructorId → constructors.constructorId
+
+9. qualifying: Stores qualifying results for races.
+- Columns:
+  - qualifyId: numerical
+  - raceId: numerical
+  - driverId: numerical
+  - constructorId: numerical
+  - number: numerical
+  - position: numerical
+- Primary Key: qualifyId
+- Foreign Keys:
+  - raceId → races.raceId
+  - driverId → drivers.driverId
+  - constructorId → constructors.constructorId

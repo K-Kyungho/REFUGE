@@ -1,0 +1,155 @@
+races:
+  NA Ratios:
+    raceId: 0.0
+    year: 0.0
+    round: 0.0
+    circuitId: 0.0
+    name: 0.0
+    time: 0.0
+  Basic Stats (mean ± std):
+    raceId: 409.500000 ± 236.857904
+    year: 1983.576829 ± 16.368996
+    round: 7.776829 ± 4.562704
+    circuitId: 22.578049 ± 17.354242
+    name: NaN ± NaN
+    time: NaN ± NaN
+
+qualifying:
+  NA Ratios:
+    qualifyId: 0.0
+    raceId: 0.0
+    driverId: 0.0
+    constructorId: 0.0
+    number: 0.0
+    position: 0.0
+  Basic Stats (mean ± std):
+    qualifyId: 2040.500000 ± 1178.516228
+    raceId: 694.354973 ± 88.983627
+    driverId: 34.427242 ± 28.812063
+    constructorId: 10.546056 ± 8.706742
+    number: 12.338315 ± 7.559481
+    position: 11.389025 ± 6.392807
+
+standings:
+  NA Ratios:
+    driverStandingsId: 0.0
+    raceId: 0.0
+    driverId: 0.0
+    points: 0.0
+    position: 0.0
+    wins: 0.0
+  Basic Stats (mean ± std):
+    driverStandingsId: 14057.000000 ± 8116.245745
+    raceId: 336.492086 ± 235.996127
+    driverId: 261.812733 ± 206.986828
+    points: 6.233285 ± 13.559335
+    position: 21.652463 ± 17.307916
+    wins: 0.227423 ± 0.852037
+
+constructor_results:
+  NA Ratios:
+    constructorResultsId: 0.0
+    raceId: 0.0
+    constructorId: 0.0
+    points: 0.0
+  Basic Stats (mean ± std):
+    constructorResultsId: 4703.500000 ± 2716.000000
+    raceId: 444.583121 ± 197.279961
+    constructorId: 35.990859 ± 43.435355
+    points: 2.093803 ± 3.647140
+
+constructor_standings:
+  NA Ratios:
+    constructorStandingsId: 0.0
+    raceId: 0.0
+    constructorId: 0.0
+    points: 0.0
+    position: 0.0
+    wins: 0.0
+  Basic Stats (mean ± std):
+    constructorStandingsId: 5084.500000 ± 2935.970453
+    raceId: 425.687021 ± 202.788783
+    constructorId: 41.347886 ± 48.448020
+    points: 15.849754 ± 28.203182
+    position: 7.674631 ± 4.596475
+    wins: 0.596264 ± 1.573275
+
+results:
+  NA Ratios:
+    resultId: 0.0
+    raceId: 0.0
+    driverId: 0.0
+    constructorId: 0.0
+    number: 0.000295
+    grid: 0.0
+    position: 0.487822
+    positionOrder: 0.0
+    points: 0.0
+    laps: 0.0
+    milliseconds: 0.785022
+    fastestLap: 0.89662
+    rank: 0.89662
+    statusId: 0.0
+  Basic Stats (mean ± std):
+    resultId: 10161.000000 ± 5866.889096
+    raceId: 403.837918 ± 225.528289
+    driverId: 195.441077 ± 172.734551
+    constructorId: 42.191212 ± 49.222654
+    number: 16.652606 ± 12.618109
+    grid: 11.219407 ± 7.478864
+    position: 7.257566 ± 4.368746
+    positionOrder: 13.326625 ± 8.002853
+    points: 1.093271 ± 2.340959
+    laps: 44.098115 ± 32.005500
+    milliseconds: 6389067.175784 ± 1863478.997688
+    fastestLap: 35.258924 ± 18.115517
+    rank: 10.415040 ± 5.790801
+    statusId: 19.722876 ± 27.188976
+
+circuits:
+  NA Ratios:
+    circuitId: 0.0
+    circuitRef: 0.0
+    name: 0.0
+    location: 0.0
+    country: 0.0
+    lat: 0.0
+    lng: 0.0
+    alt: 0.038961
+  Basic Stats (mean ± std):
+    circuitId: 38.000000 ± 22.371857
+    circuitRef: NaN ± NaN
+    name: NaN ± NaN
+    location: NaN ± NaN
+    country: NaN ± NaN
+    lat: 33.442925 ± 22.808866
+    lng: 1.076683 ± 65.516951
+    alt: 248.189189 ± 365.041851
+
+drivers:
+  NA Ratios:
+    driverId: 0.0
+    driverRef: 0.0
+    code: 0.0
+    forename: 0.0
+    surname: 0.0
+    nationality: 0.0
+  Basic Stats (mean ± std):
+    driverId: 428.000000 ± 247.538886
+    driverRef: NaN ± NaN
+    code: NaN ± NaN
+    forename: NaN ± NaN
+    surname: NaN ± NaN
+    nationality: NaN ± NaN
+
+constructors:
+  NA Ratios:
+    constructorId: 0.0
+    constructorRef: 0.0
+    name: 0.0
+    nationality: 0.0
+  Basic Stats (mean ± std):
+    constructorId: 105.000000 ± 61.054620
+    constructorRef: NaN ± NaN
+    name: NaN ± NaN
+    nationality: NaN ± NaN
