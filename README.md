@@ -2,4 +2,4 @@
 WWW 2026 Short Paper Track Under Submission
 
 
-[Arc_v5.0.pdf](https://github.com/user-attachments/files/23739257/Arc_v5.0.pdf)
+<img width="1596" height="425" alt="image" src="https://github.com/user-attachments/assets/9477fe48-5d67-4196-8029-e5292fd80f4a" />
