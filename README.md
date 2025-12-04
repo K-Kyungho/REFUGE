@@ -1,10 +1,17 @@
-# REFUGE
-WWW 2026 Short Paper Track Under Submission
+# ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents
 
-### Overall Architecture
 
-<img width="1596" height="425" alt="image" src="https://github.com/user-attachments/assets/9477fe48-5d67-4196-8029-e5292fd80f4a" />
+This is the official implementation of ReFuGe **(Feature Generation for Prediction Tasks on Relational Databases with LLM Agents)**.
+
+(Under Review; ACM WWW 2026 Short Research Track)
 
 
 ### How to run
 
+Each dataset–task pair comes with its own Python script. To run experiments, simply execute the corresponding file (e.g., amazonchurn.py etc.).
+
+
+
+```bash
+python {dataset}{task}.py
+```
