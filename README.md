@@ -10,10 +10,20 @@ This is the official implementation of ReFuGe **(Feature Generation for Predicti
 ReFuGe requires core dependencies:
 
 RelBench library (required) — used for loading RDB benchmark datasets, schemas, and task definitions.
+
 Install RelBench via:
 
 ```bash
 pip install relbench
+```
+For details, please refer to https://github.com/snap-stanford/relbench
+
+Claude API — ReFuGe uses Claude models as the backbone LLM agents
+(schema selection, feature generation, and feature filtering).
+Make sure to set your API key:
+
+```bash
+export ANTHROPIC_API_KEY="YOUR_API_KEY"
 ```
 
 ### 🚀 How to run
