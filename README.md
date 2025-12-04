@@ -5,12 +5,20 @@ This is the official implementation of ReFuGe **(Feature Generation for Predicti
 
 (Under Review; ACM WWW 2026 Short Research Track)
 
+### 🛠️ Requirements
 
-### How to run
+ReFuGe requires core dependencies:
+
+RelBench library (required) — used for loading RDB benchmark datasets, schemas, and task definitions.
+Install RelBench via:
+
+```bash
+pip install relbench
+```
+
+### 🚀 How to run
 
 Each dataset–task pair comes with its own Python script. To run experiments, simply execute the corresponding file (e.g., amazonchurn.py etc.).
-
-
 
 ```bash
 python {dataset}{task}.py
