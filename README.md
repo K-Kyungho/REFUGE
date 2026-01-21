@@ -3,7 +3,7 @@
 
 This is the official implementation of ReFuGe **(Feature Generation for Prediction Tasks on Relational Databases with LLM Agents)**.
 
-(Under Review; ACM WWW 2026 Short Research Track)
+Accepted in **ACM WWW 2026**
 
 ### 🛠️ Requirements
 
