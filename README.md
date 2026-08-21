@@ -5,6 +5,10 @@ This is the official implementation of ReFuGe **(Feature Generation for Predicti
 
 Accepted in **ACM WWW 2026**
 
+[![arXiv](https://img.shields.io/badge/arXiv-2601.17735-b31b1b.svg)](https://arxiv.org/abs/2601.17735)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+
 ### 🛠️ Requirements
 
 ReFuGe requires core dependencies:
