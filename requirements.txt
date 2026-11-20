@@ -1,0 +1,7 @@
+relbench
+anthropic
+lightgbm
+scikit-learn
+pandas
+numpy
+torch  # imported by the LLM-generated feature scripts
