@@ -54,7 +54,6 @@ Useful options:
 | `--seed` | none | seed for the evaluator's train subsampling |
 
 Outputs (`--out_dir`):
-
 ```
 <task>-{train,val,test}.csv   task tables augmented with all accepted features
 features/                     per-feature CSVs produced by the generated code
