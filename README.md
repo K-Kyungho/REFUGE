@@ -116,3 +116,21 @@ data/rel-*/         schema, column statistics and task description given to the 
 
 To add a task, add a `TaskConfig` entry in `refuge/tasks.py` (schema/statistics/task
 files for rel-hm, rel-stack and rel-trial are already under `data/`).
+
+### 📝 Citation
+
+If you find ReFuGe useful in your research, please cite our paper:
+
+```bibtex
+@inproceedings{kim2026refuge,
+  title     = {ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents},
+  author    = {Kim, Kyungho and Lee, Geon and Kim, Juyeon and Choi, Dongwon and Kang, Shinhwan and Shin, Kijung},
+  booktitle = {Proceedings of the ACM Web Conference 2026 (WWW '26)},
+  year      = {2026},
+  publisher = {ACM},
+  eprint    = {2601.17735},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2601.17735}
+}
+```
+
