@@ -11,24 +11,7 @@ Accepted in **ACM WWW 2026**
 
 ### 🛠️ Requirements
 
-ReFuGe requires core dependencies:
-
-RelBench library (required) — used for loading RDB benchmark datasets, schemas, and task definitions.
-
-Install RelBench via:
-
-```bash
-pip install relbench
-```
-For details, please refer to https://github.com/snap-stanford/relbench
-
-LLM API — by default ReFuGe uses Claude models as the backbone LLM agents
-(schema selection, feature generation, and feature filtering).
-Make sure to set your API key:
-
-```bash
-export ANTHROPIC_API_KEY="YOUR_API_KEY"
-```
+ReFuGe uses [RelBench](https://github.com/snap-stanford/relbench) to load benchmark datasets and task definitions. The default Claude backend uses `ANTHROPIC_API_KEY`
 
 OpenAI models and OpenAI-compatible servers are also supported (see [Using other LLM backbones](#-using-other-llm-backbones)).
 

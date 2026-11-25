@@ -742,7 +742,7 @@ At the end, save each feature for train/val/test as a separate CSV file. Follow 
 
             print(f"new AUROC: {new_auc:.4f}")
 
-             if new_auc >= auroc_prev:
+            if new_auc >= auroc_prev:
                 kept_in_iter = True
                 num += 1
                 print(f"Remain Feature in round {i}-{k}, improved AUROC {auroc_prev:.4f} -> {new_auc:.4f}")
