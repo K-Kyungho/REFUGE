@@ -39,8 +39,10 @@ python run.py --task f1-dnf
 | `--judge_model` | `claude-sonnet-4-20250514` | 9개 계획 중 3개를 선택하고 피처 코드를 작성 |
 | `--provider` | `anthropic` | LLM 백엔드: `anthropic` 또는 `openai` |
 | `--base_url` | 없음 | OpenAI 호환 서버의 커스텀 엔드포인트 (예: vLLM) |
+| `--api_key` | `$ANTHROPIC_API_KEY` / `$OPENAI_API_KEY` | API 키; 기본값은 선택한 provider의 환경 변수 |
 | `--temp` | 0.2 | 기본 temperature (플래너 *k*는 `temp + 0.2k` 사용) |
 | `--delta` | 0.0 | val AUROC ≥ best + delta 인 경우에만 피처를 채택 |
+| `--data_dir` | `data/` | LLM에 제공되는 스키마, 통계, 태스크 파일이 있는 디렉터리 |
 | `--out_dir` | `outputs/<dataset>/<task>` | 결과 저장 경로 |
 | `--seed` | 없음 | 평가기의 train 서브샘플링 시드 |
 
