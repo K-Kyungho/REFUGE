@@ -40,8 +40,6 @@ from sklearn.feature_selection import mutual_info_classif
 import optuna
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.metrics import roc_auc_score
-#import lightgbm as lgb
-#from lightgbm import early_stopping, log_evaluation
 
 # ======================
 # Small helpers
