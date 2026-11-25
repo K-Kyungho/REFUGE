@@ -1,5 +1,6 @@
 # ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents
 
+**English** | [한국어](README.ko.md)
 
 This is the official implementation of ReFuGe **(Feature Generation for Prediction Tasks on Relational Databases with LLM Agents)**.
 
