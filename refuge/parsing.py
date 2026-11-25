@@ -47,6 +47,7 @@ def parse_judge(text: str) -> Tuple[List[int], Dict[str, str]]:
             reasons = obj.get("reasons", {})
     except Exception:
         print("[WARN] judge JSON parse failed; falling back to first 3.")
+        return [1, 2, 3], {}
     if not selected or len(selected) < 3:
         print("[WARN] judge returned insufficient ids; falling back to first 3.")
         selected = [1, 2, 3]
