@@ -38,8 +38,10 @@ Useful options:
 | `--judge_model` | `claude-sonnet-4-20250514` | selects 3 of 9 plans and writes the feature code |
 | `--provider` | `anthropic` | LLM backend: `anthropic` or `openai` |
 | `--base_url` | none | custom endpoint for an OpenAI-compatible server (e.g. vLLM) |
+| `--api_key` | `$ANTHROPIC_API_KEY` / `$OPENAI_API_KEY` | API key; defaults to the env var for the selected provider |
 | `--temp` | 0.2 | base temperature (planner *k* uses `temp + 0.2k`) |
 | `--delta` | 0.0 | keep a feature only if val AUROC ≥ best + delta |
+| `--data_dir` | `data/` | directory with the schema, statistics and task files given to the LLM |
 | `--out_dir` | `outputs/<dataset>/<task>` | where results are written |
 | `--seed` | none | seed for the evaluator's train subsampling |
 
