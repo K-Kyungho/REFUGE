@@ -107,6 +107,7 @@ files for rel-hm, rel-stack and rel-trial are already under `data/`).
 
 If you find ReFuGe useful in your research, please cite our paper:
 
+
 ```bibtex
 @inproceedings{kim2026refuge,
   title     = {ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents},
