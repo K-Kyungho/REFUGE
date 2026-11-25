@@ -35,6 +35,8 @@ OpenAI models and OpenAI-compatible servers are also supported (see [Using other
 ### 🚀 How to run
 
 ```bash
+git clone https://github.com/K-Kyungho/REFUGE.git
+cd REFUGE
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY="YOUR_API_KEY"
 
