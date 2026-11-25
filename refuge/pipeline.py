@@ -177,15 +177,15 @@ def run(cfg: TaskConfig, client, *, data_dir: str, out_dir: str, n_iter: int = 3
             print(f"new AUROC: {new_auc:.4f}")
 
             if new_auc >= best_auc + delta:
-                feedback = (f"FEEDBACK: Feature '{feat_name}' significantly improved AUC "
-                            f"from {best_auc:.4f} to {new_auc:.4f}.")
+                feedback = (f"FEEDBACK: Feature '{feat_name}' met the acceptance threshold. "
+                            f"Validation AUROC: {best_auc:.4f} -> {new_auc:.4f}.")
                 print(f"Kept feature {it}-{k}: AUROC {best_auc:.4f} -> {new_auc:.4f}")
                 kept, best_auc = candidate, new_auc
                 kept_in_iter = True
                 n_kept += 1
             else:
-                feedback = (f"FEEDBACK: Feature '{feat_name}' caused the AUC to drop "
-                            f"from {best_auc:.4f} to {new_auc:.4f}.")
+                feedback = (f"FEEDBACK: Feature '{feat_name}' fell below the acceptance threshold "
+                            f"of {best_auc + delta:.4f}. Validation AUROC: {new_auc:.4f}.")
             print(feedback, "\n")
             history.append({"role": "assistant", "content": feedback})
 
